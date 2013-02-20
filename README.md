@@ -10,7 +10,7 @@ This library provides two key advantages over using the native Domino API to ite
 
         Database currentDb = JSFUtil.getCurrentDatabase();
         for (Document eachDoc : DominoCollections.iterateDocuments(currentDatabase.getAllDocuments())) {
-            LogUtil.log(eachDoc.getItemValueString("Subject");
+            LogUtil.log(eachDoc.getItemValueString("Subject"));
         }
 
 It really is that easy.
