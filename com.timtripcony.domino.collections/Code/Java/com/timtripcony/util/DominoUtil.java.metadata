@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257B170025A33A" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="17e" sequence="5" unid="5DD960C06555141A85257B1700277313">
+<created><datetime>20130219T021053,63-05</datetime></created>
+<modified><datetime>20130219T023144,43-05</datetime></modified>
+<revised><datetime>20130219T023144,42-05</datetime></revised>
+<lastaccessed><datetime>20130219T023144,43-05</datetime></lastaccessed>
+<addedtofile><datetime>20130219T021053,65-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tim Tripcony/O=Best</name></updatedby>
+<wassignedby><name>CN=Tim Tripcony/O=Best</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>com/timtripcony/util/DominoUtil.java</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>com/timtripcony/util/DominoUtil.java</text></item>
+
+
+</note>

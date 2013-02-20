@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257B170025A33A" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="18e" sequence="24" unid="58C8C043198E793485257B17002A36CC">
+<created><datetime>20130219T024105,40-05</datetime></created>
+<modified><datetime>20130219T132749,02-05</datetime></modified>
+<revised><datetime>20130219T132749,01-05</datetime></revised>
+<lastaccessed><datetime>20130219T132749,02-05</datetime></lastaccessed>
+<addedtofile><datetime>20130219T024105,41-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tim Tripcony/O=Best</name></updatedby>
+<wassignedby><name>CN=Tim Tripcony/O=Best</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>com/timtripcony/util/JSFUtil.java</text></item>
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>com/timtripcony/util/JSFUtil.java</text></item>
+
+</note>
