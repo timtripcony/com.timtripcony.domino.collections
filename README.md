@@ -8,7 +8,7 @@ This library provides two key advantages over using the native Domino API to ite
 1. It takes care of all recycling for you. You don't have to remember to recycle each collection member before retrieving the next.
 2. Iterable wrappers allow collections to be very tersely iterated:
 
-        Database currentDb = JSFUtil.getCurrentDatabase();
+        Database currentDatabase = JSFUtil.getCurrentDatabase();
         for (Document eachDoc : DominoCollections.iterateDocuments(currentDatabase.getAllDocuments())) {
             LogUtil.log(eachDoc.getItemValueString("Subject"));
         }
