@@ -9,7 +9,8 @@ This library provides two key advantages over using the native Domino API to ite
 2. Iterable wrappers allow collections to be very tersely iterated:
 
         Database currentDatabase = JSFUtil.getCurrentDatabase();
-        for (Document eachDoc : DominoCollections.iterateDocuments(currentDatabase.getAllDocuments())) {
+        DocumentCollection all = currentDatabase.getAllDocuments();
+        for (Document eachDoc : DominoCollections.iterateDocuments(all)) {
             LogUtil.log(eachDoc.getItemValueString("Subject"));
         }
 
