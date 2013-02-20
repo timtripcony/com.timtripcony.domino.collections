@@ -13,7 +13,7 @@ public class DocumentIterator extends AbstractDominoIterator<Document> {
 	private static final long serialVersionUID = 1L;
 	private int index_ = 0;
 	private int[] idArray_;
-	private Document current_;
+	private transient Document current_;
 
 	protected DocumentIterator(DocumentCollection collection) {
 		setIdArray(getCollectionIds(collection));
@@ -42,11 +42,11 @@ public class DocumentIterator extends AbstractDominoIterator<Document> {
 		return result;
 	}
 
-	public int[] getIdArray() {
+	protected int[] getIdArray() {
 		return idArray_;
 	}
 
-	public int getIndex() {
+	protected int getIndex() {
 		return index_;
 	}
 
@@ -77,11 +77,11 @@ public class DocumentIterator extends AbstractDominoIterator<Document> {
 		throw new NotImplementedException();
 	}
 
-	public void setIdArray(int[] idArray) {
+	protected void setIdArray(int[] idArray) {
 		idArray_ = idArray;
 	}
 
-	public void setIndex(int index) {
+	protected void setIndex(int index) {
 		index_ = index;
 	}
 }
