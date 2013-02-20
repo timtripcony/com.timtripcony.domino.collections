@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="com.timtripcony.domino.collections : Convenience wrappers for Domino collection objects to make them behave more like the Java Collections API" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>com.timtripcony.domino.collections</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/timtripcony/com.timtripcony.domino.collections">View on GitHub</a>
+
+          <h1 id="project_title">com.timtripcony.domino.collections</h1>
+          <h2 id="project_tagline">Convenience wrappers for Domino collection objects to make them behave more like the Java Collections API</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/timtripcony/com.timtripcony.domino.collections/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/timtripcony/com.timtripcony.domino.collections/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>This library provides two key advantages over using the native Domino API to iterate collections:</p>
+
+<ol>
+<li>It takes care of all recycling for you. You don't have to remember to recycle each collection member before retrieving the next.</li>
+<li>
+<p>Iterable wrappers allow collections to be very tersely iterated:</p>
+
+<pre><code>Database currentDatabase = JSFUtil.getCurrentDatabase();
+DocumentCollection all = currentDatabase.getAllDocuments();
+for (Document eachDoc : DominoCollections.iterateDocuments(all)) {
+    LogUtil.log(eachDoc.getItemValueString("Subject"));
+}
+</code></pre>
+</li>
+</ol><p>It really is that easy.</p>
+
+<ul>
+<li>No need to call a method that needs to be told the current member to give you the next... the loop knows what it's looping, so it automatically gets the next one for you.</li>
+<li>No need to create a duplicate "temp" variable to assign the next collection member to in order to be able to recycle the current member. The collection cleans up after itself, so you can focus on the document content, not on manually deallocating memory.</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">com.timtripcony.domino.collections maintained by <a href="https://github.com/timtripcony">timtripcony</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
