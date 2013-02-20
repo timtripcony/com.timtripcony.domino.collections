@@ -48,6 +48,7 @@ public class ViewEntryIterator extends AbstractDominoIterator<ViewEntry> {
 	}
 
 	public ViewEntry next() {
+		LogUtil.startTimedOperation("Retrieving next view entry in collection");
 		ViewEntry result = null;
 		ViewEntry currentEntry = getCurrentEntry();
 		try {
@@ -58,6 +59,7 @@ public class ViewEntryIterator extends AbstractDominoIterator<ViewEntry> {
 			DominoUtil.incinerate(currentEntry);
 			setCurrentEntry(result);
 		}
+		LogUtil.stopTimedOperation();
 		return result;
 	}
 
